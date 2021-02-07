@@ -10,11 +10,11 @@ const { User } = require("./models/User");
 const { auth } = require('./middleware/auth');
 
 // application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //application/json
 app.use(bodyParser.json());
-
+app.use(cookieParser());
 
 const mongoose = require('mongoose');
 

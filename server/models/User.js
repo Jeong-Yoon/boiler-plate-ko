@@ -2,6 +2,8 @@ const mogoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const saltRound = 10; // 10자리 salt를 만들어서 뿌려준다.
 const jwt = require('jsonwebtoken');
+
+
 const userSchema = mogoose.Schema({
     name: {
         type: String,
